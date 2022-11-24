@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<title>Full Bio data</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+.mb-0{
+  font-size: 20px;
+}
+</style>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+  <h1 style="text-align:center">J.B Mansion- Room No:{{object.Room_No}}</h1>
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+      <div class="">
+        <div class="">
+          <img src="{{object.photo.url}}" style="width:100%" >
+            <div class="w3-display-bottomleft w3-container w3-text-black">
+          </div>
+        </div>
+      </div><br>
+    <!-- End Left Column -->
+    </div>
+        <div class="w3-third">
+      <div class="">
+        <div class="">
+          <img src="{{object.Proof.url}}" style="width:200%" >
+            <div class="w3-display-bottom w3-container w3-text-black">
+          </div>
+        </div>
+      </div><br>
+    <!-- End Left Column -->
+    </div>
+ <br>
+ <br/>
+    <!-- Right Column -->
+    <div class="w3-twothird">
+
+      <div class="">
+        <div class="">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Room_Type</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{object.Room_Type}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Full Name</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{object.Name}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Second-person Name</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{object.Name_2}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Phone No:1</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{object.phone_number}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Phone No:2</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{object.Emergency_number}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Address</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{object.Address}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Designation</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{object.Designation}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">vehicel_number</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{object.vehicel_number}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Advance</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{object.Advance}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Check_in_date</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{object.Check_in_date}}</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Check_out_date</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{object.Check_out_date}}</p>
+              </div>
+            </div>
+         
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <br/>
+  </div>
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+  <button  class="btn btn-primary" onclick="printFunction()" style="align-items:center;margin-left: 924px;font-size: 27px;">Print</button>
+</div>
+    <script>
+      function printFunction() { 
+        window.print(); 
+      }
+    </script>
+</body>
+
+</html>
