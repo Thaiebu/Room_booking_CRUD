@@ -8,4 +8,5 @@ jobs:
     steps:
       - run: echo '${{ github.event.client_payload.AUTHOR }} sent this revision: ${{ github.event.client_payload.REVISION }}'
 
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+
+
