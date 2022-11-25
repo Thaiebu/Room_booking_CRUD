@@ -7,6 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo '${{ github.event.client_payload.AUTHOR }} sent this revision: ${{ github.event.client_payload.REVISION }}'
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
 
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
