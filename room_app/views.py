@@ -40,7 +40,7 @@ class PersonUpdateView(UpdateView):
     model = Booking
     form_class = PostForm
     template_name = 'update-detail.html'
-    success_url = 'http://127.0.0.1:8000/person_list/'
+    success_url = '/person_list/'
     def get_form(self, form_class=None):
         form = super(PersonUpdateView, self).get_form(form_class)
         form.fields['Check_in_date'].widget = AdminDateWidget(attrs={'type': 'date'})
@@ -54,7 +54,7 @@ class PersonDetailView(DetailView):
 class PersonDeleteView(DeleteView):
     model = Booking
     template_name = 'delete_alert.html'
-    success_url = 'http://127.0.0.1:8000/person_list/'
+    success_url = '/person_list/'
 
 
 # def testview(request):

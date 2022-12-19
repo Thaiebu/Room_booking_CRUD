@@ -53,13 +53,13 @@
          {% for object in object_list%}
          <tbody>
            <tr>
-             <th scope="row"><a href="http://127.0.0.1:8000/person_update/{{object.Room_No}}">{{object.Room_No}}</a></th>
+             <th scope="row"><a href="/person_update/{{object.Room_No}}">{{object.Room_No}}</a></th>
              <td>{{object.Name}}</td>
              <td>{{object.Address}}</td>
              <td>{{object.Designation}}</td>
              <td>{{object.phone_number}}</td>
              <td>{{object.Check_in_date}}</td>
-             <td><a type="button" class="btn btn-primary" href="http://127.0.0.1:8000/person_update/{{object.Room_No}}">update</a></td>
+             <td><a type="button" class="btn btn-primary" href="/person_update/{{object.Room_No}}">update</a></td>
              <td><a type="button" class="btn btn-success" href="{{object.Room_No}}">view</a></td>
              <td><a type="button" class="btn btn-danger" href="{{object.Room_No}}/delete/">Delete</a></td>
            </tr>
